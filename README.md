@@ -1,3 +1,32 @@
 # devops-netology
-Git не будет брать под свой контроль файлы, которые прописаны в .gitignore, например, логи или результаты сборки программ  
-В моем примере в файле .gitignore прописана директория Terraform и все файлы из этой директории не будут отслеживаться git 
+Git не будет брать под свой контроль следующие файлы:
+Локальные каталоги .terraform:
+**/.terraform/*
+
+Файлы .tfstate:
+*.tfstate
+*.tfstate.*
+
+Файлы журналов сбоев:
+crash.log
+crash.*.log
+
+Все файлы .tfvars:
+*.tfvars
+*.tfvars.json
+
+Все файлы:
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+Но при этом будут отслеживаться файлы, которые попали под исключения :
+!example_override.tf
+
+Так же можно добавить в исключения файлы tfplan, чтобы игнорировать вывод плана команды: terraform plan -out=tfplan
+ Пример: *tfplan*
+
+Файлы конфигурации CLI:
+.terraformrc
+terraform.rc
