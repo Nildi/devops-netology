@@ -12,11 +12,11 @@ Git не будет брать под свой контроль следующи
 crash.log
 crash.*.log
 
-Все файлы .tfvars:
+Все файлы имеющие окончания:
 *.tfvars
 *.tfvars.json
 
-Все файлы имеющие расширения:
+Все файлы имеющие окончания:
 override.tf
 override.tf.json
 *_override.tf
