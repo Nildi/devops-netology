@@ -31,3 +31,5 @@ override.tf.json
 Файлы конфигурации CLI:
 .terraformrc
 terraform.rc
+
+<br> Обновление README.md
