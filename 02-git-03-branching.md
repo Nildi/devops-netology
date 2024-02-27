@@ -9,7 +9,7 @@
 <br> git show b8d720
 <br> 56cd7859e0 и 9ea88f22fc
 <br> 4. Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
-<br> git show v0.12.23, git show v0.12.24, git log --since="2020-03-05T20:56:10-07:00" --until "2020-03-19T15:04:05-07:00" --pretty=format:"%h - %cd - %s"
+<br> git show v0.12.23, git show v0.12.24, git log --since="2020-03-05T20:56:10-07:00" --until "2020-03-19T15:04:05-07:00"
 <br> 9d0c8c5970 - Thu Mar 19 10:40:58 2020 -0400 - Remove changelog entry for fix already in 0.12.24<br/>
 51ea5d6b2f - Thu Mar 19 10:37:30 2020 -0400 - Merge pull request #24411 from hashicorp/alisdair/registry-retry-panic<br/> 
 1c1df6dc50 - Thu Mar 19 10:20:10 2020 -0400 - registry: Fix panic when server is unreachable<br/> 
